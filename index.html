@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Gorjeta</title>
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main id="container">
+        <div id="tudo">
+            <div id="calculadora">
+                <h1>Calculadora Gorjeta</h1>
+            </div>
+            <form id="form-gor">
+                <div id="input">
+                    <!--Total da conta-->
+                    <div class="input-field">
+                        <label for="value">Total da Conta: </label>
+                        <input type="number" id="value">
+                    </div>
+                    <!--Número de Pessoas-->
+                    <div class="input-field">
+                        <label for="fee">Número de Pessoas: </label>
+                        <input type="number" id="person">
+                    </div>
+                    <!--Tempo de Rendimento-->
+                    <div class="input-field">
+                        <label for="op">Porcentagem de Gorjeta: </label>
+                        <select class="form-select" id="porcent">
+                            <option value="0.05">5%</option>
+                            <option value="0.1">10%</option>
+                            <option value="0.15">15%</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="botao">
+                <button id="calculo">Calcular</button>
+            </div>
+            <div id="resultado">
+                <h4>Resultado: </h4>
+                <label id="total">
+                    A gorjeta é <span class="palavra1" id="palavra"> R$0.00 </span> por pessoa.
+                </label>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/script.js"></script>
+</html>

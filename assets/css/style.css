@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tudo{
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    background-color: rgb(0, 119, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 30rem;
+    height: 476px;
+    font-size: 20px;
+}
+
+#tudo #calculadora{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#tudo #input{
+    margin: 0px 30px 0px 30px;
+}
+
+#calculadora{
+    color: #fff;
+    height: 3rem;
+    position: relative;
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.input-field label {
+    color: #f8f8f8;
+}
+
+.input-field input{
+    border-bottom: 1px solid #f8f8f8;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.form-select{
+    font-size: 20px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 10rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px #000 solid ;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#resultado #total{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#resultado h4{
+    display: flex;
+    justify-content: center;
+}
+
+#total #palavra{
+    color: red;
+}
